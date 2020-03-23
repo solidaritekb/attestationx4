@@ -59,7 +59,7 @@
         }
         .tophead center {
         	margin-top:15px;
-        	margin-bottom:15px;
+        	margin-bottom:10px;
         }
         
         .header {
@@ -169,9 +169,9 @@
             <tr>
                 <td width="50%" height="50%" id="pageexemple1" class="pageexemple1" style="">
                     <center>
-                        <table width="95%" height="100%" cellpadding="0" cellspacing="0">
+                        <table width="92%" height="100%" cellpadding="0" cellspacing="0">
                             <tr>
-                                <td width="17%" valign="top" colspan="2" class="tophead">
+                                <td valign="top" colspan="2" class="tophead">
                                     <center>
                                         <h1>ATTESTATION DE DÉPLACEMENT DÉROGATOIRE</h1>
                                         <h2>En application de l’article 1 er du décret du 16 mars 2020 portant réglementation des<br />déplacements dans le cadre de la lutte contre la propagation du virus Covid-19</h2>
@@ -179,12 +179,12 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td width="17%" valign="top" colspan="2">
+                                <td valign="top" colspan="2">
                                     <label>Je soussigné(e)</label>
                                 </td>
                             </tr>
                             <tr>
-                                <td width="17%" valign="top">
+                                <td width="19%" valign="top">
                                     <label>Mme / M. :</label>
                                 </td>
                                 <td valign="top" height="100%" class="valign">
@@ -192,7 +192,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td width="17%" valign="top">
+                                <td width="19%" valign="top">
                                     <label>Né(e) le :</label>
                                 </td>
                                 <td valign="top" height="100%" class="valign">
@@ -200,7 +200,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td width="17%" valign="top">
+                                <td width="19%" valign="top">
                                     <label>Demeurant :</label>
                                 </td>
                                 <td valign="top" height="100%" class="valign">
@@ -210,14 +210,14 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td width="17%" valign="top" colspan="2" class="choisetitre">
+                                <td valign="top" colspan="2" class="choisetitre">
                                     <label>certifie que mon déplacement est lié au motif suivant (cocher la case) autorisé par l’article 1 er du décret du 16 mars 2020 portant réglementation des déplacements dans le cadre de la lutte contre la propagation du virus Covid-19 :</label>
                                 </td>
                             </tr>
                         </table>
                     </center>
                     <center>
-                        <table width="95%" height="100%" cellpadding="0" cellspacing="0">
+                        <table width="92%" height="100%" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td width="10%" valign="top">
                                     <input type="checkbox" style="" />
@@ -261,7 +261,7 @@
                         </table>
                     </center>
                     <center>
-                        <table width="95%" height="90pt" cellpadding="0" cellspacing="0">
+                        <table width="92%" height="90pt" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td valign="top" height="100%" class="valign" style="text-align:right;">
                                     <label>Fait &agrave;</label>
