@@ -26,29 +26,40 @@
         
         input,
         textarea {
-            font-size: 6pt;
+            font-size: 8pt;
             padding-top: 2pt;
         }
         
         label {
-            font-size: 6.5pt;
+            font-size: 8.5pt;
             padding-top: 2pt;
             display: inline-block;
         }
         
         h1 {
-            font-size: 7.5pt;
+            font-size: 8.5pt;
             display: inline-block;
             margin: 0;
             padding: 0;
         }
         
         h2 {
-            font-size: 5.5pt;
+            font-size: 6.5pt;
             display: inline-block;
             margin: 0;
             padding: 0;
             font-weight: normal;
+        }
+        .choisetitre label {
+        	margin-top:7px;
+        	margin-bottom:7px;
+        }
+        .choise label {
+        	margin-bottom:10px;
+        }
+        .tophead center {
+        	margin-top:15px;
+        	margin-bottom:15px;
         }
         
         .header {
@@ -59,6 +70,7 @@
             font-weight: normal;
             border: 1px dashed #1877f2;
             padding:10px;
+            padding-bottom:0px;
             margin-bottom:10px;
             width:100%;
         }
@@ -144,9 +156,11 @@
 <body>
     <div class="page">
     <div class="header">
-		<h1>ATTESTATION DE DÉPLACEMENT DÉROGATOIRE x4</h1> <button onclick="javascript:window.print()" class="btn-print">Imprimer cette page</button>
+    	<button onclick="javascript:window.print()" class="btn-print">Imprimer cette page</button>
+		<h1>ATTESTATION DE DÉPLACEMENT DÉROGATOIRE x4</h1>
+		<br />Lien vers l'attestation sur "gouvernement.fr" : <a href="https://www.gouvernement.fr/sites/default/files/contenu/piece-jointe/2020/03/attestation-deplacement-fr.pdf" target="_blank">attestation-deplacement-fr.pdf</a>
 		<br /><br />
-		<a href="https://www.facebook.com/SolidariteKB/">https://www.facebook.com/SolidariteKB/</a><br /><br />
+		<a href="https://www.facebook.com/SolidariteKB/" target="_blank">https://www.facebook.com/SolidariteKB/</a>.<br /><br />
 		<div id="fb-root"></div>
 		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v6.0&appId=209847012387657&autoLogAppEvents=1"></script>
 		<div class="fb-like" data-href="https://www.facebook.com/SolidariteKB/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
@@ -155,10 +169,9 @@
             <tr>
                 <td width="50%" height="50%" id="pageexemple1" class="pageexemple1" style="">
                     <center>
-                        <table width="86%" height="100%" cellpadding="0" cellspacing="0">
+                        <table width="95%" height="100%" cellpadding="0" cellspacing="0">
                             <tr>
-                                <td width="17%" valign="top" colspan="2">
-                                    <br />
+                                <td width="17%" valign="top" colspan="2" class="tophead">
                                     <center>
                                         <h1>ATTESTATION DE DÉPLACEMENT DÉROGATOIRE</h1>
                                         <h2>En application de l’article 1 er du décret du 16 mars 2020 portant réglementation des<br />déplacements dans le cadre de la lutte contre la propagation du virus Covid-19</h2>
@@ -167,7 +180,6 @@
                             </tr>
                             <tr>
                                 <td width="17%" valign="top" colspan="2">
-                                    <br />
                                     <label>Je soussigné(e)</label>
                                 </td>
                             </tr>
@@ -198,74 +210,68 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td width="17%" valign="top" colspan="2">
+                                <td width="17%" valign="top" colspan="2" class="choisetitre">
                                     <label>certifie que mon déplacement est lié au motif suivant (cocher la case) autorisé par l’article 1 er du décret du 16 mars 2020 portant réglementation des déplacements dans le cadre de la lutte contre la propagation du virus Covid-19 :</label>
-                                    <br /><br />
                                 </td>
                             </tr>
                         </table>
                     </center>
                     <center>
-                        <table width="86%" height="100%" cellpadding="0" cellspacing="0">
+                        <table width="95%" height="100%" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td width="10%" valign="top">
                                     <input type="checkbox" style="" />
                                 </td>
-                                <td valign="top" height="100%" class="valign">
+                                <td valign="top" height="100%" class="valign choise">
                                     <label>déplacements entre le domicile et le lieu d’exercice de l’activité professionnelle, lorsqu’ils sont indispensables à l’exercice d’activités ne pouvant être organisées sous forme de télétravail (sur justificatif permanent) ou déplacements professionnels ne pouvant être différés ;</label>
-                                    <br /><br />
                                 </td>
                             </tr>
                             <tr>
                                 <td width="10%" valign="top">
                                     <input type="checkbox" />
                                 </td>
-                                <td valign="top" height="100%" class="valign">
+                                <td valign="top" height="100%" class="valign choise">
                                     <label>déplacements pour effectuer des achats de première nécessité dans des établissements autorisés (liste sur <a href="https://www.gouvernement.fr/info-coronavirus" target="_blank">gouvernement.fr</a>) ;</label>
-                                    <br /><br />
                                 </td>
                             </tr>
                             <tr>
                                 <td width="10%" valign="top">
                                     <input type="checkbox" />
                                 </td>
-                                <td valign="top" height="100%" class="valign">
+                                <td valign="top" height="100%" class="valign choise">
                                     <label>déplacements pour motif de santé ;</label>
-                                    <br /><br />
                                 </td>
                             </tr>
                             <tr>
                                 <td width="10%" valign="top">
                                     <input type="checkbox" />
                                 </td>
-                                <td valign="top" height="100%" class="valign">
+                                <td valign="top" height="100%" class="valign choise">
                                     <label>déplacements pour motif familial impérieux, pour l’assistance aux personnes vulnérables ou la garde d’enfants ;</label>
-                                    <br /><br />
                                 </td>
                             </tr>
                             <tr>
                                 <td width="10%" valign="top">
                                     <input type="checkbox" />
                                 </td>
-                                <td valign="top" height="100%" class="valign">
+                                <td valign="top" height="100%" class="valign choise">
                                     <label>déplacements brefs, à proximité du domicile, liés à l’activité physique individuelle des personnes, à l’exclusion de toute pratique sportive collective, et aux besoins des animaux de compagnie.</label>
-                                    <br /><br />
                                 </td>
                             </tr>
                         </table>
                     </center>
                     <center>
-                        <table width="86%" height="90pt" cellpadding="0" cellspacing="0">
+                        <table width="95%" height="90pt" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td valign="top" height="100%" class="valign" style="text-align:right;">
                                     <label>Fait &agrave;</label>
-                                    <input type="text" class="signtop" id="inputexemple1from" style="width:95pt;" value="" />
+                                    <input type="text" class="signtop" id="inputexemple1from" style="width:125pt;" value="" />
                                     <label>, le </label>
-                                    <input type="text" class="signtop" style="width:8pt;" size="2" value="" />
+                                    <input type="text" class="signtop" style="width:12pt;" size="2" value="" />
                                     <label>/</label>
-                                    <input type="text" class="signtop" style="width:8pt;" size="2" value="" />
+                                    <input type="text" class="signtop" style="width:12pt;" size="2" value="" />
                                     <label>/</label>
-                                    <input type="text" class="signtop" style="width:15pt;" size="4" value="2020" />
+                                    <input type="text" class="signtop" style="width:25pt;" size="4" value="2020" />
                                     <br />
                                     <label>(signature)</label>
                                 </td>
