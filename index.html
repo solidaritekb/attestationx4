@@ -10,6 +10,7 @@
             background-color: #fff;
             zoom: 2;
             font-family: Arial;
+            font-size: 6.5pt;
         }
         
         table,
@@ -24,14 +25,11 @@
             padding: 0;
         }
         
-        input,
-        textarea {
-            font-size: 8pt;
-            padding-top: 2pt;
+        input {
+            font-size: 7pt;
         }
         
         label {
-            font-size: 8.5pt;
             padding-top: 2pt;
             display: inline-block;
         }
@@ -44,7 +42,7 @@
         }
         
         h2 {
-            font-size: 6.5pt;
+            font-size: 5.5pt;
             display: inline-block;
             margin: 0;
             padding: 0;
@@ -52,10 +50,10 @@
         }
         .choisetitre label {
         	margin-top:7px;
-        	margin-bottom:7px;
         }
         .choise label {
-        	margin-bottom:10px;
+        	margin-bottom:5px;
+        	margin-top:5px;
         }
         .tophead center {
         	margin-top:15px;
@@ -73,11 +71,6 @@
             padding-bottom:0px;
             margin-bottom:10px;
             width:100%;
-        }
-        
-        textarea {
-            font-size: 6pt;
-            padding-top: 5pt;
         }
         
         input[type=checkbox] {
@@ -102,6 +95,11 @@
         .valign,
         .valign * {
             vertical-align: top;
+        }
+        sup {
+        	zoom:0.7;
+        	margin-left:3px;
+        	margin-right:3px;
         }
         
         .page {
@@ -131,6 +129,9 @@
             border: none;
             border-bottom: 1px dotted #aaa;
         }
+        .annexe {
+            zoom:0.7;
+        }
         
         @page {
             margin: 10mm;
@@ -158,7 +159,7 @@
     <div class="header">
     	<button onclick="javascript:window.print()" class="btn-print">Imprimer cette page</button>
 		<h1>ATTESTATION DE DÉPLACEMENT DÉROGATOIRE x4</h1>
-		<br />Lien vers l'attestation sur "gouvernement.fr" : <a href="https://www.gouvernement.fr/sites/default/files/contenu/piece-jointe/2020/03/attestation-deplacement-fr.pdf" target="_blank">attestation-deplacement-fr.pdf</a>
+		<br />Lien vers l'attestation sur "gouvernement.fr" : <a href="https://www.interieur.gouv.fr/attestation_de_deplacement_derogatoire" target="_blank">attestation-deplacement-fr.pdf</a>
 		<br /><br />
 		<a href="https://www.facebook.com/SolidariteKB/" target="_blank">https://www.facebook.com/SolidariteKB/</a>.<br /><br />
 		Ce formulaire est une page statique et ne peut en aucun cas absorber vos données, le code est accessible sur <a href="https://github.com/solidaritekb/attestationx4" target="_blank">github.com</a>.<br />
@@ -175,7 +176,7 @@
                                 <td valign="top" colspan="2" class="tophead">
                                     <center>
                                         <h1>ATTESTATION DE DÉPLACEMENT DÉROGATOIRE</h1>
-                                        <h2>En application de l’article 1 er du décret du 16 mars 2020 portant réglementation des<br />déplacements dans le cadre de la lutte contre la propagation du virus Covid-19</h2>
+                                        <h2>En application de l’article 3 du décret du 23 mars 2020 prescrivant les mesures générales<br />nécessaires pour faire face à l’épidémie de Covid19 dans le cadre de l’état d’urgence sanitaire</h2>
                                     </center>
                                 </td>
                             </tr>
@@ -185,15 +186,15 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td width="19%" valign="top">
-                                    <label>Mme / M. :</label>
+                                <td width="16%" valign="top">
+                                    <label>Mme/M. :</label>
                                 </td>
                                 <td valign="top" height="100%" class="valign">
                                     <input id="inputexemple1for1" type="text" class="inputtxt">
                                 </td>
                             </tr>
                             <tr>
-                                <td width="19%" valign="top">
+                                <td valign="top">
                                     <label>Né(e) le :</label>
                                 </td>
                                 <td valign="top" height="100%" class="valign">
@@ -201,18 +202,24 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td width="19%" valign="top">
-                                    <label>Demeurant :</label>
+                                <td valign="top">
+                                    <label>À :</label>
                                 </td>
                                 <td valign="top" height="100%" class="valign">
                                     <input id="inputexemple1for3" type="text" class="inputtxt">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <label>Demeurant :</label>
+                                </td>
+                                <td valign="top" height="100%" class="valign">
                                     <input id="inputexemple1for4" type="text" class="inputtxt">
-                                    <input id="inputexemple1for5" type="text" class="inputtxt">
                                 </td>
                             </tr>
                             <tr>
                                 <td valign="top" colspan="2" class="choisetitre">
-                                    <label>certifie que mon déplacement est lié au motif suivant (cocher la case) autorisé par l’article 1 er du décret du 16 mars 2020 portant réglementation des déplacements dans le cadre de la lutte contre la propagation du virus Covid-19 :</label>
+                                    <label>certifie que mon déplacement est lié au motif suivant (cocher la case) autorisé par l’article 3 du décret du 23 mars 2020 prescrivant les mesures générales nécessaires pour faire face à l’épidémie de Covid19 dans le cadre de l’état d’urgence sanitaire<sup>1</sup> :</label>
                                 </td>
                             </tr>
                         </table>
@@ -220,43 +227,59 @@
                     <center>
                         <table width="92%" height="100%" cellpadding="0" cellspacing="0">
                             <tr>
-                                <td width="10%" valign="top">
+                                <td width="7%" valign="middle">
                                     <input type="checkbox" style="" />
                                 </td>
                                 <td valign="top" height="100%" class="valign choise">
-                                    <label>déplacements entre le domicile et le lieu d’exercice de l’activité professionnelle, lorsqu’ils sont indispensables à l’exercice d’activités ne pouvant être organisées sous forme de télétravail (sur justificatif permanent) ou déplacements professionnels ne pouvant être différés ;</label>
+                                    <label>Déplacements entre le domicile et le lieu d’exercice de l’activité professionnelle, lorsqu’ils sont indispensables à l’exercice d’activités ne pouvant être organisées sous forme de télétravail ou déplacements professionnels ne pouvant être différés<sup>2</sup>.</label>
                                 </td>
                             </tr>
                             <tr>
-                                <td width="10%" valign="top">
-                                    <input type="checkbox" />
+                                <td valign="middle">
+                                    <input type="checkbox" style="" />
                                 </td>
                                 <td valign="top" height="100%" class="valign choise">
-                                    <label>déplacements pour effectuer des achats de première nécessité dans des établissements autorisés (liste sur <a href="https://www.gouvernement.fr/info-coronavirus" target="_blank">gouvernement.fr</a>) ;</label>
+                                    <label>Déplacements pour effectuer des achats de fournitures nécessaires à l’activité professionnelle et des achats de première nécessité<sup>3</sup> dans des établissements dont les activités demeurent autorisées (liste sur <a href="https://www.gouvernement.fr/info-coronavirus" target="_blank">gouvernement.fr</a>).</label>
                                 </td>
                             </tr>
                             <tr>
-                                <td width="10%" valign="top">
-                                    <input type="checkbox" />
+                                <td valign="middle">
+                                    <input type="checkbox" style="" />
                                 </td>
                                 <td valign="top" height="100%" class="valign choise">
-                                    <label>déplacements pour motif de santé ;</label>
+                                    <label>Consultations et soins ne pouvant être assurés à distance et ne pouvant être différés ; consultations et soins des patients atteints d'une affection de longue durée.</label>
                                 </td>
                             </tr>
                             <tr>
-                                <td width="10%" valign="top">
-                                    <input type="checkbox" />
+                                <td valign="middle">
+                                    <input type="checkbox" style="" />
                                 </td>
                                 <td valign="top" height="100%" class="valign choise">
-                                    <label>déplacements pour motif familial impérieux, pour l’assistance aux personnes vulnérables ou la garde d’enfants ;</label>
+                                    <label>Déplacements pour motif familial impérieux, pour l’assistance aux personnes vulnérables ou la garde d’enfants.</label>
                                 </td>
                             </tr>
                             <tr>
-                                <td width="10%" valign="top">
-                                    <input type="checkbox" />
+                                <td valign="middle">
+                                    <input type="checkbox" style="" />
                                 </td>
                                 <td valign="top" height="100%" class="valign choise">
-                                    <label>déplacements brefs, à proximité du domicile, liés à l’activité physique individuelle des personnes, à l’exclusion de toute pratique sportive collective, et aux besoins des animaux de compagnie (1h par jour à moins d'1km du domicile).</label>
+                                    <label>Déplacements brefs, dans la limite d'une heure quotidienne et dans un rayon maximal d'un kilomètre autour du domicile, liés soit à l'activité physique individuelle des personnes, à l'exclusion de toute pratique sportive collective et de toute proximité avec d'autres personnes, soit à la promenade avec les seules personnes regroupées dans un même domicile, soit aux besoins des animaux de compagnie.</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="middle">
+                                    <input type="checkbox" style="" />
+                                </td>
+                                <td valign="top" height="100%" class="valign choise">
+                                    <label>Convocation judiciaire ou administrative.</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="middle">
+                                    <input type="checkbox" style="" />
+                                </td>
+                                <td valign="top" height="100%" class="valign choise">
+                                    <label>Participation à des missions d’intérêt général sur demande de l’autorité administrative. </label>
                                 </td>
                             </tr>
                         </table>
@@ -264,9 +287,9 @@
                     <center>
                         <table width="92%" height="90pt" cellpadding="0" cellspacing="0">
                             <tr>
-                                <td valign="top" height="100%" class="valign" style="text-align:right;">
+                                <td valign="top" height="100%" class="valign">
                                     <label>Fait &agrave;</label>
-                                    <input type="text" class="signtop" id="inputexemple1from" style="width:105pt;" value="" />
+                                    <input type="text" class="signtop" id="inputexemple1from" style="width:135pt;" value="" />
                                     <label>, le </label>
                                     <input type="text" class="signtop" style="width:12pt;" size="2" value="" />
                                     <label>/</label>
@@ -277,8 +300,20 @@
                                     <input type="text" class="signtop" style="width:12pt;" size="2" value="" />
                                     <label>:</label>
                                     <input type="text" class="signtop" style="width:12pt;" size="2" value="" />
+                                    <br /><br />
+                                    <sup style="float:right;">(Date et heure de début de sortie à mentionner obligatoirement)</sup>
                                     <br />
-                                    <label>(signature)</label>
+                                    <label>Signature :</label>
+                                    <input type="text" class="signtop" id="inputexemple1sign" style="width:135pt;" value="" /><br /><br /><br /><br /><br />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" height="100%" class="valign">
+                                    <label class="annexe">
+		                                <sup>1</sup> Les personnes souhaitant bénéficier de l'une de ces exceptions doivent se munir s’il y a lieu, lors de leurs déplacements hors de leur domicile, d'un document leur permettant de justifier que le déplacement considéré entre dans le champ de l'une de ces exceptions.<br />
+		                                <sup>2</sup> A utiliser par les travailleurs non-salariés, lorsqu’ils ne peuvent disposer d’un justificatif de déplacement établi par leur employeur.<br />
+		                                <sup>3</sup> Y compris les acquisitions à titre gratuit (distribution de denrées alimentaires…) et les déplacements liés à la perception de prestations sociales et au retrait d’espèces.
+                                    </label><br /><br />
                                 </td>
                             </tr>
                         </table>
@@ -293,9 +328,9 @@
         </table>
 
         <script type="text/javascript">
-            $("#pageexemple2").append($("#pageexemple1").html().replace("inputexemple1for", "inputexemple2for").replace("inputexemple1for", "inputexemple2for").replace("inputexemple1for", "inputexemple2for").replace("inputexemple1for", "inputexemple2for").replace("inputexemple1for", "inputexemple2for").replace("inputexemple1from", "inputexemple2from"));
-            $("#pageexemple3").append($("#pageexemple1").html().replace("inputexemple1for", "inputexemple3for").replace("inputexemple1for", "inputexemple3for").replace("inputexemple1for", "inputexemple3for").replace("inputexemple1for", "inputexemple3for").replace("inputexemple1for", "inputexemple3for").replace("inputexemple1from", "inputexemple3from"));
-            $("#pageexemple4").append($("#pageexemple1").html().replace("inputexemple1for", "inputexemple4for").replace("inputexemple1for", "inputexemple4for").replace("inputexemple1for", "inputexemple4for").replace("inputexemple1for", "inputexemple4for").replace("inputexemple1for", "inputexemple4for").replace("inputexemple1from", "inputexemple4from"));
+            $("#pageexemple2").append($("#pageexemple1").html().replace("inputexemple1for", "inputexemple2for").replace("inputexemple1for", "inputexemple2for").replace("inputexemple1for", "inputexemple2for").replace("inputexemple1for", "inputexemple2for").replace("inputexemple1for", "inputexemple2for").replace("inputexemple1from", "inputexemple2from").replace("inputexemple1sign", "inputexemple2sign"));
+            $("#pageexemple3").append($("#pageexemple1").html().replace("inputexemple1for", "inputexemple3for").replace("inputexemple1for", "inputexemple3for").replace("inputexemple1for", "inputexemple3for").replace("inputexemple1for", "inputexemple3for").replace("inputexemple1for", "inputexemple3for").replace("inputexemple1from", "inputexemple3from").replace("inputexemple1sign", "inputexemple3sign"));
+            $("#pageexemple4").append($("#pageexemple1").html().replace("inputexemple1for", "inputexemple4for").replace("inputexemple1for", "inputexemple4for").replace("inputexemple1for", "inputexemple4for").replace("inputexemple1for", "inputexemple4for").replace("inputexemple1for", "inputexemple4for").replace("inputexemple1from", "inputexemple4from").replace("inputexemple1sign", "inputexemple4sign"));
             $('#inputexemple1for1').on('change', function() {
                 $('#inputexemple2for1').val($('#inputexemple1for1').val());
                 $('#inputexemple3for1').val($('#inputexemple1for1').val());
@@ -325,6 +360,11 @@
                 $('#inputexemple2from').val($('#inputexemple1from').val());
                 $('#inputexemple3from').val($('#inputexemple1from').val());
                 $('#inputexemple4from').val($('#inputexemple1from').val());
+            });
+            $('#inputexemple1sign').on('change', function() {
+                $('#inputexemple2sign').val($('#inputexemple1sign').val());
+                $('#inputexemple3sign').val($('#inputexemple1sign').val());
+                $('#inputexemple4sign').val($('#inputexemple1sign').val());
             });
         </script>
     </div>
